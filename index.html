@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Memory</title>
+  <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:600" rel="stylesheet" />
+  <link href="site.css" rel="stylesheet" />
+  <link href="custom.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class = "header">
+    <div class = "counter">
+      <div class = "counter-item">
+        <h4 class = "header-title">Move</h4>
+        <div class = "header-num">
+            <span id = "mov">00</span>/<span id = "mov-total">20</span>
+            </div>
+        </div> 
+        <div class = "counter-item"> 
+        <h4 class = "header-title">Time</h4>
+        <div class = "header-num">
+            <span id = "minutes">00</span>:<span id = "seconds">00</span>
+            </div>
+        </div>    
+    </div>
+    <div class="level">
+      <h4 class="header-title">Level</h4>
+        <div class="header-num">
+          <span id="level">01</span>
+        </div>
+    </div>
+  </header>  
+  <main>
+    <div id="table" class="table"></div>
+    <div id="levelUp" class="level-up">
+      <div class="mode">
+        <h2>¡Very Good!</h2>
+        <button id="nextLevel">Level Up</button>
+        <button class="restart">¿Restart?</button>
+      </div>
+    </div>
+    <div id="gameOver" class="game-over">
+      <div class="mode">
+        <h2>¡Sorry!</h2>
+        <p>You have ran out of moves 😢</p>
+        <button class="restart">¿Restart?</button>
+      </div>
+    </div>
+    <div id="endGame" class="end-game">
+      <div class="mode">
+        <h2>¡Congratulations!</h2>
+        <p>You have won all the levels 🏆</p>
+        <button class="restart">¿Restart?</button>
+      </div>
+    </div>
+  </main>
+  <audio src="success.mp3" class="sound" id="sound-success" preload="auto"></audio>
+  <audio src="error.mp3" class="sound" id="sound-error" preload="auto"></audio>
+  <audio src="flip.mp3" class="sound" id="sound-flip" preload="auto"></audio>
+  <script src="global.js"></script>
+  <script src="distribute-card.js"></script>
+  <script src="discover-compare.js"></script>
+  <script src="success-error.js"></script>
+  <script src="movement.js"></script>
+  <script src="timer.js"></script>
+  <script src="finish.js"></script>
+  <script src="change-level.js"></script>  
+  <script src="game-over.js"></script>  
+  <script src="initial.js"></script>
+</body>
+
+</html>
